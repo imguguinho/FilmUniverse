@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Mismo head que populares.html -->
+    <title>Configuración | CineSocial</title>
+    <style>
+        /* Estilos adicionales para la página de configuración */
+        .settings-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .settings-section {
+            background-color: var(--secondary);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .settings-section h2 {
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--gray);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: var(--dark);
+            border: 1px solid var(--gray);
+            color: var(--light);
+            border-radius: 4px;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        .btn-save {
+            background-color: var(--primary);
+            color: var(--dark);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+        
+        .avatar-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .avatar-preview {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--gray);
+            margin-right: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--light);
+        }
+        
+        .avatar-upload {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--gray);
+            transition: .4s;
+            border-radius: 34px;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .slider {
+            background-color: var(--primary);
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        
+        .switch-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (igual que populares.html) -->
+    <header>
+        <a href="index.html" class="logo">Cine<span>Social</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="populares.html">Populares</a></li>
+                <li><a href="estrenos.html">Estrenos</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="miembros.html">Miembros</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn btn-signup">Crear cuenta</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar (igual que populares.html) -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="populares.html"><i class="fas fa-fire"></i> Populares</a></li>
+                <li><a href="estrenos.html"><i class="fas fa-calendar-week"></i> Estrenos</a></li>
+                <li><a href="mi-lista.html"><i class="fas fa-list"></i> Mi lista</a></li>
+                <li><a href="calificadas.html"><i class="fas fa-star"></i> Calificadas</a></li>
+                <li><a href="recientes.html"><i class="fas fa-history"></i> Recientes</a></li>
+                <li><a href="generos.html"><i class="fas fa-tags"></i> Géneros</a></li>
+                <li><a href="configuracion.html" class="active"><i class="fas fa-cog"></i> Configuración</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="content">
+            <div class="page-header">
+                <h1>Configuración</h1>
+            </div>
+
+            <div class="settings-container">
+                <!-- Perfil Section -->
+                <div class="settings-section">
+                    <h2>Perfil</h2>
+                    <div class="avatar-container">
+                        <div class="avatar-preview">JD</div>
+                        <div class="avatar-upload">
+                            <button class="filter-btn">Cambiar avatar</button>
+                            <small style="color: var(--light-gray); margin-top: 0.5rem;">JPEG o PNG. Máx. 5MB</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Nombre de usuario</label>
+                        <input type="text" id="username" class="form-control" value="juan_diaz">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Biografía</label>
+                        <textarea id="bio" class="form-control" rows="4">Amante del cine clásico y del cine de autor. Mis géneros favoritos son el drama y la ciencia ficción.</textarea>
+                    </div>
+                    <button class="btn-save">Guardar cambios</button>
+                </div>
+
+                <!-- Privacidad Section -->
+                <div class="settings-section">
+                    <h2>Privacidad</h2>
+                    <div class="switch-container">
+                        <span>Perfil público</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switch-container">
+                        <span>Mostrar actividad reciente</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switch-container">
+                        <span>Permitir mensajes de otros usuarios</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switch-container">
+                        <span>Mostrar correo electrónico</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <button class="btn-save">Guardar cambios</button>
+                </div>
+
+                <!-- Notificaciones Section -->
+                <div class="settings-section">
+                    <h2>Notificaciones</h2>
+                    <div class="switch-container">
+                        <span>Notificaciones por correo</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switch-container">
+                        <span>Notificaciones push</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switch-container">
+                        <span>Nuevos seguidores</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switch-container">
+                        <span>Comentarios en mis reseñas</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="switch-container">
+                        <span>Nuevos estrenos</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <button class="btn-save">Guardar cambios</button>
+                </div>
+
+                <!-- Cuenta Section -->
+                <div class="settings-section">
+                    <h2>Cuenta</h2>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" class="form-control" value="juan@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Cambiar contraseña</label>
+                        <input type="password" id="password" class="form-control" placeholder="Nueva contraseña">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar contraseña</label>
+                        <input type="password" id="confirm-password" class="form-control" placeholder="Confirmar nueva contraseña">
+                    </div>
+                    <button class="btn-save">Guardar cambios</button>
+                    <button class="filter-btn" style="margin-top: 1rem; background-color: #dc3545; color: white; border: none;">
+                        <i class="fas fa-trash-alt"></i> Eliminar cuenta
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Mismo script que populares.html
+    </script>
+</body>
+</html>

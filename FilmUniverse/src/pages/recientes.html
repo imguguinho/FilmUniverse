@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Recientes | FilmUniverse</title>
+</head>
+<body>
+    <!-- Header (igual que populares.html) -->
+    <header>
+        <a href="/index.html" class="logo">Film<span>Universe</span></a>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/populares.html">Populares</a></li>
+                <li><a href="/estrenos.html" class="active">Estrenos</a></li>
+                <li><a href="/mi-lista.html">Listas</a></li>
+                <li><a href="/miembros.html">Miembros</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn btn-signup">Crear cuenta</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar (igual que populares.html) -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="/populares.html"><i class="fas fa-fire"></i> Populares</a></li>
+                <li><a href="/estrenos.html"><i class="fas fa-calendar-week"></i> Estrenos</a></li>
+                <li><a href="/mi-lista.html"><i class="fas fa-list"></i> Mi lista</a></li>
+                <li><a href="/calificadas.html"><i class="fas fa-star"></i> Calificadas</a></li>
+                <li><a href="/recientes.html"><i class="fas fa-history"></i> Recientes</a></li>
+                <li><a href="/generos.html"><i class="fas fa-tags"></i> Géneros</a></li>
+                <li><a href="/configuracion.html"><i class="fas fa-cog"></i> Configuración</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="content">
+            <div class="page-header">
+                <h1>Películas Recientes</h1>
+                <div class="filters">
+                    <button class="filter-btn active">Todas</button>
+                    <button class="filter-btn">Hoy</button>
+                    <button class="filter-btn">Esta semana</button>
+                    <button class="filter-btn">Este mes</button>
+                </div>
+            </div>
+
+            <div class="movies-grid">
+                <!-- Movie Card 1 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg" alt="Dune: Parte Dos" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Dune: Parte Dos</h3>
+                        <p class="movie-year">2024</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.2 (12.4k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 2 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg" alt="Killers of the Flower Moon" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Killers of the Flower Moon</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5 (8.7k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 3 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Oppenheimer</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.8 (15.2k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 4 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg" alt="Poor Things" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Poor Things</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.1 (9.3k)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

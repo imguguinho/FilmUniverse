@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Mismo head que populares.html -->
+    <title>Géneros | CineSocial</title>
+</head>
+<body>
+    <!-- Header (igual que populares.html) -->
+    <header>
+        <a href="index.html" class="logo">Cine<span>Social</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="populares.html">Populares</a></li>
+                <li><a href="estrenos.html">Estrenos</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="miembros.html">Miembros</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn btn-signup">Crear cuenta</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar (igual que populares.html) -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="populares.html"><i class="fas fa-fire"></i> Populares</a></li>
+                <li><a href="estrenos.html"><i class="fas fa-calendar-week"></i> Estrenos</a></li>
+                <li><a href="mi-lista.html"><i class="fas fa-list"></i> Mi lista</a></li>
+                <li><a href="calificadas.html"><i class="fas fa-star"></i> Calificadas</a></li>
+                <li><a href="recientes.html"><i class="fas fa-history"></i> Recientes</a></li>
+                <li><a href="generos.html" class="active"><i class="fas fa-tags"></i> Géneros</a></li>
+                <li><a href="configuracion.html"><i class="fas fa-cog"></i> Configuración</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="content">
+            <div class="page-header">
+                <h1>Explorar por Géneros</h1>
+            </div>
+
+            <div class="genres-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem;">
+                <!-- Genre 1 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-mask" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Acción</h3>
+                </a>
+
+                <!-- Genre 2 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-laugh-squint" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Comedia</h3>
+                </a>
+
+                <!-- Genre 3 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-heart" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Romance</h3>
+                </a>
+
+                <!-- Genre 4 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-ghost" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Terror</h3>
+                </a>
+
+                <!-- Genre 5 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-rocket" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Ciencia Ficción</h3>
+                </a>
+
+                <!-- Genre 6 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-dragon" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Fantasía</h3>
+                </a>
+
+                <!-- Genre 7 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-user-secret" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Suspenso</h3>
+                </a>
+
+                <!-- Genre 8 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-microphone-alt" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Musical</h3>
+                </a>
+
+                <!-- Genre 9 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-theater-masks" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Drama</h3>
+                </a>
+
+                <!-- Genre 10 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-child" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Animación</h3>
+                </a>
+
+                <!-- Genre 11 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-user-ninja" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Artes Marciales</h3>
+                </a>
+
+                <!-- Genre 12 -->
+                <a href="#" class="genre-card" style="display: block; background-color: var(--secondary); padding: 1.5rem; border-radius: 8px; text-align: center; text-decoration: none; color: var(--light); transition: transform 0.3s;">
+                    <i class="fas fa-book" style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"></i>
+                    <h3>Histórico</h3>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

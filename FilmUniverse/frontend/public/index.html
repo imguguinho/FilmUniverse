@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../../src/styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmUniverse - Tu red social de películas y series</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/index.html" class="logo">Film<span>Universe</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="/populares.html">Populares</a></li>
+                <li><a href="/estrenos.html">Estrenos</a></li>
+                <li><a href="/mi-lista.html">Listas</a></li>
+                <li><a href="/miembros.html">Miembros</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="btn btn-login">Iniciar sesión</a>
+            <a href="#" class="btn btn-signup">Crear cuenta</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="/populares.html"><i class="fas fa-fire"></i> Populares</a></li>
+                <li><a href="/estrenos.html"><i class="fas fa-calendar-week"></i> Estrenos</a></li>
+                <li><a href="/mi-lista.html"><i class="fas fa-list"></i> Mi lista</a></li>
+                <li><a href="/calificadas.html"><i class="fas fa-star"></i> Calificadas</a></li>
+                <li><a href="/recientes.html"><i class="fas fa-history"></i> Recientes</a></li>
+                <li><a href="/generos.html"><i class="fas fa-tags"></i> Géneros</a></li>
+                <li><a href="/configuracion.html"><i class="fas fa-cog"></i> Configuración</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="content">
+            <section class="welcome-section">
+                <h1>Bienvenido a CineSocial</h1>
+                <p>La red social para amantes del cine y las series. Descubre, califica y comenta todo sobre tus películas y series favoritas.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar películas, series, personas...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </section>
+
+            <section class="trending-section">
+                <h2>Películas populares esta semana</h2>
+                <div class="movies-grid">
+                    <!-- Movie Card 1 -->
+                    <div class="movie-card" onclick="openModal('Dune: Parte Dos', '2024', '166 min', 'https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg', 'Paul Atreides se une a Chani y los Fremen mientras busca venganza contra los conspiradores que destruyeron a su familia. Enfrentando una elección entre el amor de su vida y el destino del universo, debe evitar un futuro terrible que solo él puede prever.')">
+                        <img src="https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg" alt="Dune: Parte Dos" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Dune: Parte Dos</h3>
+                            <p class="movie-year">2024</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">4.2 (12.4k)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 2 -->
+                    <div class="movie-card" onclick="openModal('Killers of the Flower Moon', '2023', '206 min', 'https://image.tmdb.org/t/p/w500/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg', 'Cuando se descubre petróleo en la Oklahoma de los años 20 bajo las tierras de la Nación Osage, los osage son asesinados uno a uno. A medida que aumenta el número de muertos, el recién formado FBI toma el caso, desentrañando una conspiración espeluznante y tratando de hacer justicia.')">
+                        <img src="https://image.tmdb.org/t/p/w500/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg" alt="Killers of the Flower Moon" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Killers of the Flower Moon</h3>
+                            <p class="movie-year">2023</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">4.5 (8.7k)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 3 -->
+                    <div class="movie-card" onclick="openModal('Oppenheimer', '2023', '181 min', 'https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg', 'La historia del científico J. Robert Oppenheimer y su papel en el desarrollo de la bomba atómica. Una mirada fascinante a un hombre que debe arriesgarse a destruir el mundo para salvarlo.')">
+                        <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Oppenheimer</h3>
+                            <p class="movie-year">2023</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">4.8 (15.2k)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 4 -->
+                    <div class="movie-card" onclick="openModal('Poor Things', '2023', '141 min', 'https://image.tmdb.org/t/p/w500/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg', 'La increíble evolución de Bella Baxter, una joven resucitada por el brillante y poco ortodoxo científico Dr. Godwin Baxter. Bajo la protección de Baxter, Bella está ansiosa por aprender. Hambrienta de la mundanidad que le falta, Bella se escapa con Duncan Wedderburn, un astuto y libertino abogado, en un viaje vertiginoso a través de los continentes.')">
+                        <img src="https://image.tmdb.org/t/p/w500/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg" alt="Poor Things" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Poor Things</h3>
+                            <p class="movie-year">2023</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">4.1 (9.3k)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 5 -->
+                    <div class="movie-card" onclick="openModal('The Zone of Interest', '2023', '105 min', 'https://image.tmdb.org/t/p/w500/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg', 'La vida cotidiana de la familia del comandante de Auschwitz, que vive en una casa junto al campo de concentración. Mientras Höss trabaja para construir su sueño de vida para su familia, se esfuerza por ser un buen esposo y padre.')">
+                        <img src="https://image.tmdb.org/t/p/w500/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg" alt="The Zone of Interest" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Zone of Interest</h3>
+                            <p class="movie-year">2023</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">4.3 (7.1k)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 6 -->
+                    <div class="movie-card" onclick="openModal('Barbie', '2023', '114 min', 'https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg', 'Barbie vive en Barbieland donde todo es perfecto, tiene trabajos perfectos y ropa perfecta, y cada día es el mejor día. Hasta que un día descubre que no es tan perfecta y se embarca en una aventura al mundo real para descubrir la verdadera felicidad.')">
+                        <img src="https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg" alt="Barbie" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Barbie</h3>
+                            <p class="movie-year">2023</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">4.0 (14.5k)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 7 -->
+                    <div class="movie-card" onclick="openModal('Anatomy of a Fall', '2023', '152 min', 'https://image.tmdb.org/t/p/w500/kQs6keheMwCxJxrzV83VUwFVHJJ.jpg', 'Una mujer es sospechosa del asesinato de su marido después de que su cuerpo sea encontrado debajo de su casa de nieve en los Alpes franceses. El juicio revela no solo los misterios de su matrimonio, sino también su propia personalidad como escritora.')">
+                        <img src="https://image.tmdb.org/t/p/w500/kQs6keheMwCxJxrzV83VUwFVHJJ.jpg" alt="Anatomy of a Fall" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">Anatomy of a Fall</h3>
+                            <p class="movie-year">2023</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">4.4 (6.8k)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie Card 8 -->
+                    <div class="movie-card" onclick="openModal('The Holdovers', '2023', '133 min', 'https://image.tmdb.org/t/p/w500/VHSzY4l3FqF4oQ1hsXbTQxN2Q5m.jpg', 'Un profesor gruñón de una escuela preparatoria de Nueva Inglaterra se ve obligado a pasar las vacaciones navideñas en el campus cuidando a un puñado de estudiantes sin hogar. Pronto forma un vínculo poco probable con un estudiante problemático pero brillante, y con la cocinera de la escuela que acaba de perder a su hijo en Vietnam.')">
+                        <img src="https://image.tmdb.org/t/p/w500/VHSzY4l3FqF4oQ1hsXbTQxN2Q5m.jpg" alt="The Holdovers" class="movie-poster">
+                        <div class="movie-info">
+                            <h3 class="movie-title">The Holdovers</h3>
+                            <p class="movie-year">2023</p>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">4.3 (5.9k)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Movie Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalMovieTitle">Título de la película</h2>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Movie Poster" class="modal-poster" id="modalPoster">
+                <div class="modal-details">
+                    <div class="modal-meta">
+                        <span class="modal-year" id="modalYear">2023</span>
+                        <span class="modal-runtime" id="modalRuntime">120 min</span>
+                    </div>
+                    <p class="modal-overview" id="modalOverview">Descripción de la película...</p>
+                    <div class="modal-actions">
+                        <button class="rate-btn" onclick="openRatingModal()">
+                            <i class="fas fa-star"></i> Calificar
+                        </button>
+                        <button class="watchlist-btn">
+                            <i class="fas fa-plus"></i> Mi lista
+                        </button>
+                    </div>
+                    <div class="comments-section">
+                        <h3 class="comments-title">Comentarios</h3>
+                        <div class="comment-form">
+                            <textarea class="comment-textarea" placeholder="Escribe tu comentario..."></textarea>
+                            <button class="comment-submit">Publicar</button>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-avatar">JD</div>
+                            <div class="comment-content">
+                                <div class="comment-user">Juan Díaz</div>
+                                <div class="comment-text">Una obra maestra del cine moderno. La actuación del protagonista es simplemente increíble y la fotografía te deja sin aliento.</div>
+                                <div class="comment-meta">
+                                    <span class="comment-date">Hace 3 días</span>
+                                    <span class="comment-rating">
+                                        <i class="fas fa-star"></i> 5/5
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-avatar">MP</div>
+                            <div class="comment-content">
+                                <div class="comment-user">María Pérez</div>
+                                <div class="comment-text">Buena película pero se hace un poco larga en el segundo acto. El final lo compensa todo.</div>
+                                <div class="comment-meta">
+                                    <span class="comment-date">Hace 1 semana</span>
+                                    <span class="comment-rating">
+                                        <i class="fas fa-star"></i> 4/5
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rating Modal -->
+    <div class="modal" id="ratingModal">
+        <div class="modal-content" style="max-width: 400px;">
+            <div class="modal-header">
+                <h2 class="modal-title">Calificar película</h2>
+                <button class="close-modal" onclick="closeRatingModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h3 id="ratingMovieTitle" style="margin-bottom: 1rem;">Título de la película</h3>
+                    <div class="stars" style="font-size: 2rem; margin-bottom: 1rem;">
+                        <i class="far fa-star" onclick="setRating(1)"></i>
+                        <i class="far fa-star" onclick="setRating(2)"></i>
+                        <i class="far fa-star" onclick="setRating(3)"></i>
+                        <i class="far fa-star" onclick="setRating(4)"></i>
+                        <i class="far fa-star" onclick="setRating(5)"></i>
+                    </div>
+                    <p id="ratingText" style="color: var(--light-gray);">Selecciona tu calificación</p>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <button class="watchlist-btn" onclick="closeRatingModal()">Cancelar</button>
+                    <button class="rate-btn" onclick="submitRating()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

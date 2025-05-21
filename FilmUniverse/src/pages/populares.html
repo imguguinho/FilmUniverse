@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Populares | FilmUniverse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="/index.html" class="logo">Film<span>Universe</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/populares.html" class="active">Populares</a></li>
+                <li><a href="/estrenos.html">Estrenos</a></li>
+                <li><a href="/mi-lista.html">Listas</a></li>
+                <li><a href="/miembros.html">Miembros</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-login">Iniciar sesión</a>
+            <a href="registro.html" class="btn btn-signup">Crear cuenta</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="/populares.html"><i class="fas fa-fire"></i> Populares</a></li>
+                <li><a href="/estrenos.html"><i class="fas fa-calendar-week"></i> Estrenos</a></li>
+                <li><a href="/mi-lista.html"><i class="fas fa-list"></i> Mi lista</a></li>
+                <li><a href="/calificadas.html"><i class="fas fa-star"></i> Calificadas</a></li>
+                <li><a href="/recientes.html"><i class="fas fa-history"></i> Recientes</a></li>
+                <li><a href="/generos.html"><i class="fas fa-tags"></i> Géneros</a></li>
+                <li><a href="/configuracion.html"><i class="fas fa-cog"></i> Configuración</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content -->
+        <main class="content">
+            <div class="page-header">
+                <h1>Películas Populares</h1>
+                <div class="filters">
+                    <button class="filter-btn active">Todo</button>
+                    <button class="filter-btn">Hoy</button>
+                    <button class="filter-btn">Esta semana</button>
+                    <button class="filter-btn">Este mes</button>
+                    <button class="filter-btn">Este año</button>
+                </div>
+            </div>
+
+            <div class="movies-grid">
+                <!-- Movie Card 1 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg" alt="Dune: Parte Dos" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Dune: Parte Dos</h3>
+                        <p class="movie-year">2024</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.2 (12.4k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 2 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg" alt="Killers of the Flower Moon" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Killers of the Flower Moon</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5 (8.7k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 3 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Oppenheimer</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.8 (15.2k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 4 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg" alt="Poor Things" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Poor Things</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.1 (9.3k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 5 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg" alt="The Zone of Interest" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Zone of Interest</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.3 (7.1k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 6 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg" alt="Barbie" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Barbie</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.0 (14.5k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 7 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/kQs6keheMwCxJxrzV83VUwFVHJJ.jpg" alt="Anatomy of a Fall" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Anatomy of a Fall</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.4 (6.8k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 8 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/VHSzY4l3FqF4oQ1hsXbTQxN2Q5m.jpg" alt="The Holdovers" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Holdovers</h3>
+                        <p class="movie-year">2023</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.3 (5.9k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 9 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/5mzr6JZbrqnqD8rCEvPhuCE5Fw2.jpg" alt="The Batman" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Batman</h3>
+                        <p class="movie-year">2022</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.1 (18.7k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 10 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg" alt="Spider-Man: No Way Home" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Spider-Man: No Way Home</h3>
+                        <p class="movie-year">2021</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">4.5 (22.1k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 11 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/1X7vow16X7CnCoexXh4H4F2yDJv.jpg" alt="Everything Everywhere All at Once" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Everything Everywhere All at Once</h3>
+                        <p class="movie-year">2022</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.7 (14.9k)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie Card 12 -->
+                <div class="movie-card">
+                    <img src="https://image.tmdb.org/t/p/w500/4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg" alt="Parasite" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Parasite</h3>
+                        <p class="movie-year">2019</p>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.8 (16.3k)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn">Anterior</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">Siguiente</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Filtros
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                // Aquí iría la lógica para filtrar las películas
+            });
+        });
+
+        // Paginación
+        const pageBtns = document.querySelectorAll('.page-btn');
+        pageBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (!btn.classList.contains('active') && !isNaN(btn.textContent)) {
+                    pageBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    // Aquí iría la lógica para cambiar de página
+                }
+            });
+        });
+    </script>
+</body>
+</html>
